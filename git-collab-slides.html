@@ -331,18 +331,50 @@
 <section id="a-history-of-git" class="slide level2">
 <h2>A History of Git</h2>
 <ul>
-<li>Invented by Linus Torvalds for development of Linux kernel</li>
+<li>Invented by Linus Torvalds in 2005 for maintenence of Linux kernel</li>
 <li>Git means idiot or fool</li>
 <li>Complexity required for remote and local tracking of changes</li>
 </ul>
+<p>Goals of the new system: - Speed - Simple design - Strong support for non-linear development (thousands of parallel branches) - Fully distributed - Able to handle large projects like the Linux kernel efficiently (speed and data size)</p>
+<aside class="notes">
+<p>http://git-scm.com/book/en/v2/</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="why-use-git" class="slide level2">
 <h2>Why use Git?</h2>
 <ul>
+<li>Three States
+<ul>
+<li><em>Modified</em> means that you have changed the file <br> but have not committed it to your database yet.</li>
+<li><em>Staged</em> means that you have marked a modified file <br> to go into your next commit snapshot.</li>
+<li><em>Committed</em> means data is safely stored in local database.</li>
+</ul></li>
 <li>Analogy: track-changes in word document</li>
-<li>solutions for merging multiple documents</li>
-<li>Centralized remote repo can be accessed &amp; updated by anyone at anytime</li>
+<li>Remote repo: accessed &amp; updated by anyone at anytime</li>
+<li>Solutions for merging sets of changes</li>
 </ul>
+<p><img data-src="progit2.png" class="absolute" style="top: 0px; right: 0px; height: 200px; "></p>
+<p><a href="http://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">ProGit Book</a></p>
+</section>
+<section id="git-commands" class="slide level2" data-background-opacity="0.1" data-background-iframe="https://git-scm.com/docs" style="text-align: left; margin-top: 1em">
+<h2><a href="https://git-scm.com/docs" data-preview-link="true" style="text-align: center">Git Commands</a></h2>
+</section>
+<section id="git-commands-1" class="slide level2" data-background-opacity="0.1" data-background-iframe="http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" style="text-align: left; margin-top: 1em">
+<h2><a href="http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" data-preview-link="true" style="text-align: center">Git Commands</a></h2>
+</section>
+<section id="repositories" class="slide level2">
+<h2>Repositories</h2>
+<p>You typically obtain a Git repository in one of two ways: - Initializing a Repository - Cloning an Existing Repository</p>
 </section></section>
 <section>
 <section id="github" class="title-slide slide level1 center">
@@ -371,11 +403,54 @@
 <li>merges</li>
 </ul>
 </section>
+<section id="getting-started-with-gh-desktop" class="slide level2">
+<h2>Getting Started with GH Desktop</h2>
+<p><a href="https://desktop.github.com">GHD</a></p>
+<p><a href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/creating-your-first-repository-using-github-desktop#part-1-installing-github-desktop-and-authenticating-your-account">Github Desktop Setup</a></p>
+
+<img data-src="GHDesktop.png" class="r-stretch"></section>
 <section id="issues" class="slide level2">
 <h2>Issues</h2>
 <ul>
-<li>this is where the organization &amp; development happens</li>
+<li><table>
+<thead>
+<tr class="header">
+<th>his is where the organization &amp; development happens.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>- <code>@</code> mention collaborators</td>
+</tr>
+<tr class="even">
+<td>- <code>#</code> followed by part of the issue title to link related issues in the same repository</td>
+</tr>
+<tr class="odd">
+<td>- Create and assign a new branch for an issue (When pull-request; issue closed?)</td>
+</tr>
+<tr class="even">
+<td>- You can use GitHub Discussions to ask and answer questions, share information, make announcements, and conduct or participate in conversations about a project.</td>
+</tr>
+</tbody>
+</table></li>
 </ul>
+<p>https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-a-branch-for-an-issue</p>
+<aside class="notes">
+<p>When you mention an issue in another issue or pull request, the issue’s timeline reflects the cross-reference so that you can keep track of related work. To indicate that work is in progress, you can link an issue to a pull request. When the pull request merges, the linked issue automatically closes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="discussions" class="slide level2">
+<h2>Discussions</h2>
 </section>
 <section id="pull-requests" class="slide level2">
 <h2>Pull-Requests</h2>
@@ -408,12 +483,18 @@
 </ul>
 </section>
 
+<section>
 <section id="codespaces" class="title-slide slide level1 center">
 <h1>CodeSpaces</h1>
+
+</section>
+<section class="slide level2">
+
+<p>https://training.github.com/downloads/github-git-cheat-sheet/</p>
 <div class="footer footer-default">
 
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -440,13 +521,13 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': true,
-'smaller': true,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'smaller': true,
+'smaller': false,
  
         // Display controls in the bottom right corner
         controls: false,
