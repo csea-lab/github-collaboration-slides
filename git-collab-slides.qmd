@@ -1,0 +1,82 @@
+---
+title: "<br><br>Git & GitHub for <br>Scientific Collaboration"
+format: 
+  revealjs:
+    slide-number: true
+    preview-links: auto
+    smaller: true
+    scrollable: true
+    title-slide-attributes:
+      data-background-image: Git-Logo-2Color.png
+      data-background-size: contain
+      data-background-opacity: '0.2'
+      data-background-position: top
+editor_options: 
+  chunk_output_type: inline
+---
+
+# Git
+
+## A History of Git
+
+- Invented by Linus Torvalds for development of Linux kernel
+- Git means idiot or fool
+- Complexity required for remote and local tracking of changes
+
+
+
+## Why use Git?
+
+- Analogy: track-changes in word document
+- solutions for merging multiple documents
+- Centralized remote repo can be accessed & updated by anyone at anytime
+
+# GitHub
+
+## GitHub
+- just one variant of remote-repository 
+- Documentation and added features
+- Project Organization tools
+- Security: public vs pivate 
+- organizations & teams
+
+## Repos
+
+- remote-repositories 
+- cloning vs forking
+- tracking changes
+- commits
+- main/local
+- branches
+- merges
+
+## Issues
+
+- this is where the organization & development happens
+
+## Pull-Requests
+
+- at some point consolidation of work needs to happen
+
+## Teams and Code Review
+
+- teams for sub-components of larger projects
+- teams in classroom
+- programmatic system of team organization
+
+## Version Control for Open Science
+
+- MNE
+- FieldTrip
+
+# Webpages and Wikis
+
+- built-in GitHub wikis
+- hosting slides
+- hosting webpages
+- verson control with additional hosting
+
+
+# CodeSpaces
+
+
