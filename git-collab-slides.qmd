@@ -87,26 +87,16 @@ git diff
 ![](progit2.png){.absolute top=0 right=0  height="200"} 
 
 
-
-## Best Git INTRO
-
-[http://karthik.github.io/git_intro/#/slide-title](http://karthik.github.io/git_intro/#/slide-title)
-
-
-::: {background-opacity="0.3"  background-iframe="https://ndpsoftware.com/git-cheatsheet.html" style="text-align: left; margin-top: 1em"}
-## [Git Commands](https://ndpsoftware.com/git-cheatsheet.html){preview-link="true" style="text-align: center"}
+::: {background-opacity="0.3"  background-iframe="http://karthik.github.io/git_intro/#/slide-title" style="text-align: left; margin-top: 1em"}
+## [Best Git INTRO](http://karthik.github.io/git_intro/#/slide-title){preview-link="true" style="text-align: center"}
 :::
 
 
+## Learn Git
 
-::: {background-opacity="0.3"  background-iframe="https://git-scm.com/docs" style="text-align: left; margin-top: 1em"}
-## [Git Commands](https://git-scm.com/docs){preview-link="true" style="text-align: center"}
-:::
-
-
-::: {background-opacity="0.3"  background-iframe="http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" style="text-align: left; margin-top: 1em"}
-## [Git Commands](http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository){preview-link="true" style="text-align: center"}
-:::
+https://ndpsoftware.com/git-cheatsheet.html
+https://git-scm.com/docs
+http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 
 
 ## Practice Git!!
@@ -128,23 +118,13 @@ You typically obtain a Git repository in one of two ways:
 ## GitHub
 - *Analogy*: Similar to Dropbox except sync timing
 - *Antipattern*: Dropbox has no system to entertain +1 versions
-- One variant of remote-repository including: 
+- One variant of remote-repository hosting including: 
    - BitBucket, GitLab, Sourceforge 
-- Extensive Documentation and additional online features
-- Project Organization tools
-- Security: public vs private (also 2FA)
-- Private: Organizations, teams, assignees
-- Public: Social Tools, Watching, Fork-ing
-
-## Repos
-
-- remote-repositories 
-- cloning vs forking
-- tracking changes
-- commits
-- main/local
-- branches
-- merges
+- Extensive documentation and additional online features
+- Project organization tools: Projects, wikis, webpages
+- Security: public vs private (e.g., access-control & 2FA)
+   - Private: organizations, teams, assignees
+   - Public: oocial tools, watching, fork-ing
 
 ## Getting Started with GH Desktop
 
@@ -156,7 +136,7 @@ You typically obtain a Git repository in one of two ways:
 
 ## Issues
 
-This is where the organization & development happens.   
+This is where the organization of development begins  
 
 - `@` mention collaborators
 - `#` followed by issue title, links related issues in repository
@@ -192,7 +172,17 @@ https://github.com/csea-lab/github-collaboration-slides/discussions](
 https://github.com/csea-lab/github-collaboration-slides/discussions)
 ::: 
 
-   
+
+## Repos
+
+- remote-repositories 
+- cloning vs forking
+- tracking changes
+- commits
+- main/local
+- branches
+- merges 
+
 ## Pull-Requests
 
 - at some point consolidation of work needs to happen
