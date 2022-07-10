@@ -25,7 +25,7 @@ editor_options:
 - *Git* - an idiom meaning idiot or fool
 - Complexity required for remote and local tracking of changes
   
-*Goals of the Git system*:  
+*Goals of the Git version control system (VCS)*:  
   
 - Speed
 - Simple design
@@ -143,7 +143,8 @@ You typically obtain a Git repository in one of two ways:
 
 ## Issues
 
-This is where the organization & development happens. 
+This is where the organization & development happens.   
+
 - `@` mention collaborators
 - `#` followed by issue title, links related issues in repository
 - Create and assign new branch for issue (When pull-request; issue closed?)
