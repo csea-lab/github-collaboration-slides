@@ -108,6 +108,15 @@ git diff
 ## [Git Commands](http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository){preview-link="true" style="text-align: center"}
 :::
 
+
+## Practice Git!!
+
+https://learngitbranching.js.org
+https://app.datacamp.com/learn/courses/introduction-to-git
+https://www.w3schools.com/git/git_exercises.asp
+
+
+
 ## Repositories
 
 You typically obtain a Git repository in one of two ways:  
@@ -117,11 +126,15 @@ You typically obtain a Git repository in one of two ways:
 # GitHub
 
 ## GitHub
-- just one variant of remote-repository 
-- Documentation and added features
+- *Analogy*: Similar to Dropbox except sync timing
+- *Antipattern*: Dropbox has no system to entertain +1 versions
+- One variant of remote-repository including: 
+   - BitBucket, GitLab, Sourceforge 
+- Extensive Documentation and additional online features
 - Project Organization tools
-- Security: public vs pivate 
-- organizations & teams
+- Security: public vs private (also 2FA)
+- Private: Organizations, teams, assignees
+- Public: Social Tools, Watching, Fork-ing
 
 ## Repos
 
@@ -150,7 +163,7 @@ This is where the organization & development happens.
 - Create and assign new branch for issue (When pull-request; issue closed?)
 
 
-::: {.aside}
+::: aside
 https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart
 https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue
 https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-a-branch-for-an-issue
@@ -164,14 +177,21 @@ When you mention an issue in another issue or pull request, the issue's timeline
 
 ## Discussions 
 
-Use GitHub Discussions to:   
+Use GitHub Repository Discussions to:   
 
 - ask and answer questions
 - share information
 - make announcements
 - conduct or participate in <br> conversations about a project
 
-![](.png){.absolute top=200 right=100  height="350"} 
+![](repo-discussion.png){.absolute top=180 right=50  height="350"} 
+
+::: aside
+   - [
+https://github.com/csea-lab/github-collaboration-slides/discussions](
+https://github.com/csea-lab/github-collaboration-slides/discussions)
+::: 
+
    
 ## Pull-Requests
 
@@ -185,11 +205,22 @@ https://github.com/ypriverol/github-paper/blob/master/document/manuscript.md
 
 https://github.com/ypriverol/github-paper/network
 
-## Teams and Code Review
+## Teams and Code Review {.smaller}
 
 - teams for sub-components of larger projects
-- teams in classroom
-- programmatic system of team organization
+- teams for super-group for several repos
+- groups in classrooms
+- packages to arrange <br> members & organization
+
+![](team-discussion.png){.absolute bottom=130 right=0  height="350"} 
+
+::: aside
+
+   - [https://github.com/orgs/csea-lab/teams/example-team](https://github.com/orgs/csea-lab/teams/example-team)  
+   - [https://github.com/orgs/csea-lab/teams/example-team/discussions](https://github.com/orgs/csea-lab/teams/example-team/discussions)  
+
+:::
+
 
 ## Version Control for Open Science
 
@@ -226,6 +257,12 @@ https://kbroman.org/github_tutorial/pages/merge_conflicts.html
 https://kbroman.org/github_tutorial/pages/exploring_code.html
 https://kbroman.org/github_tutorial/pages/branching.html
 https://github.com/kbroman/Tools4RR/blob/main/04_Git/GitCommands/git_notes.md
+
+https://happygitwithr.com/index.html
+
+https://datacarpentry.org/rr-version-control/02-git-in-github/index.html
+https://swcarpentry.github.io/git-novice/
+https://librarycarpentry.org/lc-git/
 
 https://rogerdudler.github.io/git-guide/
 https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf
