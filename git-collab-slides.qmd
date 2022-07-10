@@ -1,5 +1,7 @@
 ---
-title: "<br><br>Git & GitHub for <br>Scientific Collaboration"
+title: "<br><br><br><span style='color:tomato;'>Version Control</span> for <br>Scientific Collaboration"
+subtitle: "Summer Workshop Series -- July 11, 2022"
+author: "Ryan Mears"
 format: 
   revealjs:
     slide-number: true
@@ -17,54 +19,100 @@ editor_options:
 
 # Git
 
-## A History of Git
+## A History of Git {.smaller}
 
-- Invented by Linus Torvalds in 2005 for maintenence of Linux kernel
-- Git means idiot or fool
+- Invented by Linus Torvalds in 2005 <br> for maintenence of Linux kernel
+- *Git* - an idiom meaning idiot or fool
 - Complexity required for remote and local tracking of changes
-
-Goals of the new system:
+  
+*Goals of the Git system*:  
+  
 - Speed
 - Simple design
 - Strong support for non-linear development (thousands of parallel branches)
 - Fully distributed
 - Able to handle large projects like the Linux kernel efficiently (speed and data size)
 
-
+![](Linuxs-Creator-Linus-Torvalds-Jerk.jpeg){.absolute top=0 right=0  height="200"} 
 
 :::{.notes}
+https://en.wikipedia.org/wiki/Linus_Torvalds
 http://git-scm.com/book/en/v2/
 ::: 
 
 
 ## Why use Git?
 
+- Analogy: turn tracking-changes `on` in Word document
+- Antipattern: revision auto-saving  w/ new time-stamp (e.g., metadata or name)
+- Remote repo: accessed & updated<br> by anyone at anytime
+- Solutions for continuous <br> merging of sets of changes
+
+![](team-git.png){.absolute top=220 right=30  height="320"} 
+
+::: aside
+> Perez-Riverol, *et al.* (2016). Ten Simple Rules for Taking Advantage of Git & GitHub. *PLoS computational biology*, [12(7), e1004947.](https://doi.org/10.1371/journal.pcbi.1004947)
+::: 
+
+
+## How to use Git
+
 - Three States
    - *Modified* means that you have changed the file <br> but have not committed it to your database yet.
    - *Staged* means that you have marked a modified file <br> to go into your next commit snapshot.
    - *Committed* means data is safely stored in local database.
-- Analogy: track-changes in word document
-- Remote repo: accessed & updated by anyone at anytime
-- Solutions for merging sets of changes
+
+::: columns
+::: {.column width="50%"}
+```{git}
+git status
+git add
+git commit -a
+git push
+```
+[ProGit Book](http://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
+:::
+::: {.column width="50%"}
+```{git}
+git config
+git clone
+git log
+git pull
+git branch
+git diff
+```
+:::
+:::
 
 ![](progit2.png){.absolute top=0 right=0  height="200"} 
 
-[ProGit Book](http://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
 
-::: {background-opacity="0.1"  background-iframe="https://git-scm.com/docs" style="text-align: left; margin-top: 1em"}
+
+## Best Git INTRO
+
+[http://karthik.github.io/git_intro/#/slide-title](http://karthik.github.io/git_intro/#/slide-title)
+
+
+::: {background-opacity="0.3"  background-iframe="https://ndpsoftware.com/git-cheatsheet.html" style="text-align: left; margin-top: 1em"}
+## [Git Commands](https://ndpsoftware.com/git-cheatsheet.html){preview-link="true" style="text-align: center"}
+:::
+
+
+
+::: {background-opacity="0.3"  background-iframe="https://git-scm.com/docs" style="text-align: left; margin-top: 1em"}
 ## [Git Commands](https://git-scm.com/docs){preview-link="true" style="text-align: center"}
 :::
 
 
-::: {background-opacity="0.1"  background-iframe="http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" style="text-align: left; margin-top: 1em"}
+::: {background-opacity="0.3"  background-iframe="http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" style="text-align: left; margin-top: 1em"}
 ## [Git Commands](http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository){preview-link="true" style="text-align: center"}
 :::
 
 ## Repositories
 
-You typically obtain a Git repository in one of two ways:
-- Initializing a Repository
-- Cloning an Existing Repository
+You typically obtain a Git repository in one of two ways:  
+- Initializing a Repository  
+- Cloning an Existing Repository  
 
 # GitHub
 
@@ -95,18 +143,17 @@ You typically obtain a Git repository in one of two ways:
 
 ## Issues
 
-- This is where the organization & development happens.
-   - 
-   - `@` mention collaborators
-   - `#` followed by part of the issue title to link related issues in the same repository
-   - Create and assign a new branch for an issue (When pull-request; issue closed?)
-   - You can use GitHub Discussions to ask and answer questions, share information, make announcements, and conduct or participate in conversations about a project.
-   
+This is where the organization & development happens. 
+- `@` mention collaborators
+- `#` followed by issue title, links related issues in repository
+- Create and assign new branch for issue (When pull-request; issue closed?)
 
 
+::: {.aside}
 https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart
 https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue
 https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-a-branch-for-an-issue
+:::
 
 ::: {.notes}
 
@@ -116,9 +163,26 @@ When you mention an issue in another issue or pull request, the issue's timeline
 
 ## Discussions 
 
+Use GitHub Discussions to:   
+
+- ask and answer questions
+- share information
+- make announcements
+- conduct or participate in <br> conversations about a project
+
+![](.png){.absolute top=200 right=100  height="350"} 
+   
 ## Pull-Requests
 
 - at some point consolidation of work needs to happen
+
+## Writing Manuscripts
+
+https://github.com/ypriverol/github-paper/blob/master/document/manuscript.md
+
+## Flow Diagrams
+
+https://github.com/ypriverol/github-paper/network
 
 ## Teams and Code Review
 
@@ -138,10 +202,40 @@ When you mention an issue in another issue or pull request, the issue's timeline
 - hosting webpages
 - verson control with additional hosting
 
+## ROpenSci
+
+https://ropensci.org
+https://devguide.ropensci.org
+https://ropensci.org/software-review/
+https://ropensci.r-universe.dev/ui#packages
+https://devguide.ropensci.org/collaboration.html
+https://devguide.ropensci.org/newstemplate.html
+
 
 # CodeSpaces
 
 ---
 
+## Resources 
+
+https://kbroman.org/tutorials.html
+
+https://kbroman.org/github_tutorial/
+https://kbroman.org/github_tutorial/pages/merge_conflicts.html
+https://kbroman.org/github_tutorial/pages/exploring_code.html
+https://kbroman.org/github_tutorial/pages/branching.html
+https://github.com/kbroman/Tools4RR/blob/main/04_Git/GitCommands/git_notes.md
+
+https://rogerdudler.github.io/git-guide/
+https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf
+https://think-like-a-git.net
 
 https://training.github.com/downloads/github-git-cheat-sheet/
+
+
+
+
+
+
+
+

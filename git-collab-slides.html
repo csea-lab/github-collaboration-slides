@@ -3,7 +3,8 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.421">
 
-  <title>  Git &amp; GitHub for  Scientific Collaboration</title>
+  <meta name="author" content="Ryan Mears">
+  <title>   Version Control for  Scientific Collaboration</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -16,6 +17,69 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="git-collab-slides_files/libs/revealjs/dist/theme/quarto.css" id="theme">
   <script src="git-collab-slides_files/libs/clipboard/clipboard.min.js"></script>
@@ -320,7 +384,9 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="Git-Logo-2Color.png" data-background-opacity="0.2" data-background-position="top" data-background-size="contain" class="center">
-  <h1 class="title"><br><br>Git &amp; GitHub for <br>Scientific Collaboration</h1>
+  <h1 class="title"><br><br><br><span style="color:tomato;">Version Control</span> for <br>Scientific Collaboration</h1>
+  <p class="subtitle">Summer Workshop Series – July 11, 2022</p>
+  <p class="author">Ryan Mears</p>
 </section>
 
 <section>
@@ -328,16 +394,24 @@
 <h1>Git</h1>
 
 </section>
-<section id="a-history-of-git" class="slide level2">
+<section id="a-history-of-git" class="slide level2 smaller">
 <h2>A History of Git</h2>
 <ul>
-<li>Invented by Linus Torvalds in 2005 for maintenence of Linux kernel</li>
-<li>Git means idiot or fool</li>
+<li>Invented by Linus Torvalds in 2005 <br> for maintenence of Linux kernel</li>
+<li><em>Git</em> - an idiom meaning idiot or fool</li>
 <li>Complexity required for remote and local tracking of changes</li>
 </ul>
-<p>Goals of the new system: - Speed - Simple design - Strong support for non-linear development (thousands of parallel branches) - Fully distributed - Able to handle large projects like the Linux kernel efficiently (speed and data size)</p>
+<p><em>Goals of the Git system</em>:</p>
+<ul>
+<li>Speed</li>
+<li>Simple design</li>
+<li>Strong support for non-linear development (thousands of parallel branches)</li>
+<li>Fully distributed</li>
+<li>Able to handle large projects like the Linux kernel efficiently (speed and data size)</li>
+</ul>
+<p><img data-src="Linuxs-Creator-Linus-Torvalds-Jerk.jpeg" class="absolute" style="top: 0px; right: 0px; height: 200px; "></p>
 <aside class="notes">
-<p>http://git-scm.com/book/en/v2/</p>
+<p>https://en.wikipedia.org/wiki/Linus_Torvalds http://git-scm.com/book/en/v2/</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -353,28 +427,64 @@
 <section id="why-use-git" class="slide level2">
 <h2>Why use Git?</h2>
 <ul>
+<li>Analogy: turn tracking-changes <code>on</code> in Word document</li>
+<li>Antipattern: revision auto-saving w/ new time-stamp (e.g., metadata or name)</li>
+<li>Remote repo: accessed &amp; updated<br> by anyone at anytime</li>
+<li>Solutions for continuous <br> merging of sets of changes</li>
+</ul>
+<p><img data-src="team-git.png" class="absolute" style="top: 220px; right: 30px; height: 320px; "></p>
+
+<aside><div>
+<blockquote>
+<p>Perez-Riverol, <em>et al.</em> (2016). Ten Simple Rules for Taking Advantage of Git &amp; GitHub. <em>PLoS computational biology</em>, <a href="https://doi.org/10.1371/journal.pcbi.1004947">12(7), e1004947.</a></p>
+</blockquote>
+</div></aside></section>
+<section id="how-to-use-git" class="slide level2">
+<h2>How to use Git</h2>
+<ul>
 <li>Three States
 <ul>
 <li><em>Modified</em> means that you have changed the file <br> but have not committed it to your database yet.</li>
 <li><em>Staged</em> means that you have marked a modified file <br> to go into your next commit snapshot.</li>
 <li><em>Committed</em> means data is safely stored in local database.</li>
 </ul></li>
-<li>Analogy: track-changes in word document</li>
-<li>Remote repo: accessed &amp; updated by anyone at anytime</li>
-<li>Solutions for merging sets of changes</li>
 </ul>
-<p><img data-src="progit2.png" class="absolute" style="top: 0px; right: 0px; height: 200px; "></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {git} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>git status</span>
+<span id="cb1-2"><a href="#cb1-2"></a>git add</span>
+<span id="cb1-3"><a href="#cb1-3"></a>git commit -a</span>
+<span id="cb1-4"><a href="#cb1-4"></a>git push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><a href="http://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">ProGit Book</a></p>
+</div><div class="column" style="width:50%;">
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource {git} number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>git config</span>
+<span id="cb2-2"><a href="#cb2-2"></a>git clone</span>
+<span id="cb2-3"><a href="#cb2-3"></a>git log</span>
+<span id="cb2-4"><a href="#cb2-4"></a>git pull</span>
+<span id="cb2-5"><a href="#cb2-5"></a>git branch</span>
+<span id="cb2-6"><a href="#cb2-6"></a>git diff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p><img data-src="progit2.png" class="absolute" style="top: 0px; right: 0px; height: 200px; "></p>
 </section>
-<section id="git-commands" class="slide level2" data-background-opacity="0.1" data-background-iframe="https://git-scm.com/docs" style="text-align: left; margin-top: 1em">
+<section id="best-git-intro" class="slide level2">
+<h2>Best Git INTRO</h2>
+<p><a href="http://karthik.github.io/git_intro/#/slide-title">http://karthik.github.io/git_intro/#/slide-title</a></p>
+</section>
+<section id="git-commands" class="slide level2" data-background-opacity="0.3" data-background-iframe="https://ndpsoftware.com/git-cheatsheet.html" style="text-align: left; margin-top: 1em">
+<h2><a href="https://ndpsoftware.com/git-cheatsheet.html" data-preview-link="true" style="text-align: center">Git Commands</a></h2>
+</section>
+<section id="git-commands-1" class="slide level2" data-background-opacity="0.3" data-background-iframe="https://git-scm.com/docs" style="text-align: left; margin-top: 1em">
 <h2><a href="https://git-scm.com/docs" data-preview-link="true" style="text-align: center">Git Commands</a></h2>
 </section>
-<section id="git-commands-1" class="slide level2" data-background-opacity="0.1" data-background-iframe="http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" style="text-align: left; margin-top: 1em">
+<section id="git-commands-2" class="slide level2" data-background-opacity="0.3" data-background-iframe="http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" style="text-align: left; margin-top: 1em">
 <h2><a href="http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" data-preview-link="true" style="text-align: center">Git Commands</a></h2>
 </section>
 <section id="repositories" class="slide level2">
 <h2>Repositories</h2>
-<p>You typically obtain a Git repository in one of two ways: - Initializing a Repository - Cloning an Existing Repository</p>
+<p>You typically obtain a Git repository in one of two ways:<br>
+- Initializing a Repository<br>
+- Cloning an Existing Repository</p>
 </section></section>
 <section>
 <section id="github" class="title-slide slide level1 center">
@@ -411,30 +521,8 @@
 <img data-src="GHDesktop.png" class="r-stretch"></section>
 <section id="issues" class="slide level2">
 <h2>Issues</h2>
-<ul>
-<li><table>
-<thead>
-<tr class="header">
-<th>his is where the organization &amp; development happens.</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>- <code>@</code> mention collaborators</td>
-</tr>
-<tr class="even">
-<td>- <code>#</code> followed by part of the issue title to link related issues in the same repository</td>
-</tr>
-<tr class="odd">
-<td>- Create and assign a new branch for an issue (When pull-request; issue closed?)</td>
-</tr>
-<tr class="even">
-<td>- You can use GitHub Discussions to ask and answer questions, share information, make announcements, and conduct or participate in conversations about a project.</td>
-</tr>
-</tbody>
-</table></li>
-</ul>
-<p>https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-a-branch-for-an-issue</p>
+<p>This is where the organization &amp; development happens. - <code>@</code> mention collaborators - <code>#</code> followed by issue title, links related issues in repository - Create and assign new branch for issue (When pull-request; issue closed?)</p>
+
 <aside class="notes">
 <p>When you mention an issue in another issue or pull request, the issue’s timeline reflects the cross-reference so that you can keep track of related work. To indicate that work is in progress, you can link an issue to a pull request. When the pull request merges, the linked issue automatically closes.</p>
 <style type="text/css">
@@ -448,15 +536,33 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
+<aside><div>
+<p>https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-a-branch-for-an-issue</p>
+</div></aside></section>
 <section id="discussions" class="slide level2">
 <h2>Discussions</h2>
+<p>Use GitHub Discussions to:</p>
+<ul>
+<li>ask and answer questions</li>
+<li>share information</li>
+<li>make announcements</li>
+<li>conduct or participate in <br> conversations about a project</li>
+</ul>
+<p><img data-src=".png" class="absolute" style="top: 200px; right: 100px; height: 350px; "></p>
 </section>
 <section id="pull-requests" class="slide level2">
 <h2>Pull-Requests</h2>
 <ul>
 <li>at some point consolidation of work needs to happen</li>
 </ul>
+</section>
+<section id="writing-manuscripts" class="slide level2">
+<h2>Writing Manuscripts</h2>
+<p>https://github.com/ypriverol/github-paper/blob/master/document/manuscript.md</p>
+</section>
+<section id="flow-diagrams" class="slide level2">
+<h2>Flow Diagrams</h2>
+<p>https://github.com/ypriverol/github-paper/network</p>
 </section>
 <section id="teams-and-code-review" class="slide level2">
 <h2>Teams and Code Review</h2>
@@ -473,6 +579,7 @@
 <li>FieldTrip</li>
 </ul>
 </section></section>
+<section>
 <section id="webpages-and-wikis" class="title-slide slide level1 center">
 <h1>Webpages and Wikis</h1>
 <ul>
@@ -482,14 +589,20 @@
 <li>verson control with additional hosting</li>
 </ul>
 </section>
-
+<section id="ropensci" class="slide level2">
+<h2>ROpenSci</h2>
+<p>https://ropensci.org https://devguide.ropensci.org https://ropensci.org/software-review/ https://ropensci.r-universe.dev/ui#packages https://devguide.ropensci.org/collaboration.html https://devguide.ropensci.org/newstemplate.html</p>
+</section></section>
 <section>
 <section id="codespaces" class="title-slide slide level1 center">
 <h1>CodeSpaces</h1>
 
 </section>
-<section class="slide level2">
-
+<section id="resources" class="slide level2">
+<h2>Resources</h2>
+<p>https://kbroman.org/tutorials.html</p>
+<p>https://kbroman.org/github_tutorial/ https://kbroman.org/github_tutorial/pages/merge_conflicts.html https://kbroman.org/github_tutorial/pages/exploring_code.html https://kbroman.org/github_tutorial/pages/branching.html https://github.com/kbroman/Tools4RR/blob/main/04_Git/GitCommands/git_notes.md</p>
+<p>https://rogerdudler.github.io/git-guide/ https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf https://think-like-a-git.net</p>
 <p>https://training.github.com/downloads/github-git-cheat-sheet/</p>
 <div class="footer footer-default">
 
