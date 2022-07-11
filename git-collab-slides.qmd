@@ -219,6 +219,9 @@ You typically obtain a Git repository in one of two ways:
 [Github Desktop Setup](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/creating-your-first-repository-using-github-desktop#part-1-installing-github-desktop-and-authenticating-your-account)
 
 ![](GHDesktop.png)
+## Getting Started with GH Desktop
+
+![](ScreenShots/GH-desktop.png)
 
 ## Issues
 
@@ -241,6 +244,38 @@ When you mention an issue in another issue or pull request, the issue's timeline
 
 ::: 
 
+## Issues
+
+![](ScreenShots/issue1a.png)
+
+## Issues
+
+![](ScreenShots/issue1b.png)
+
+## Issues
+
+![](ScreenShots/issue2a.png)
+
+## Issues
+
+![](ScreenShots/issue2b.png)
+
+## Issues
+
+![](ScreenShots/issue2c.png)
+
+## Issues
+
+![](ScreenShots/issue2d.png)
+
+## Issues
+
+![](ScreenShots/issue2e.png)
+
+## Issues
+
+![](ScreenShots/EnableDiscussions.png)
+
 ## Discussions 
 
 Use GitHub Repository Discussions to:   
@@ -257,6 +292,9 @@ Use GitHub Repository Discussions to:
 Repo discussions](
 https://github.com/csea-lab/github-collaboration-slides/discussions)
 ::: 
+
+## Discussions 
+
 
 
 ## Repos
