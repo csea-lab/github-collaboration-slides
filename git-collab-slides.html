@@ -428,18 +428,28 @@
 <h2>Why use Git?</h2>
 <ul>
 <li>Analogy: turn tracking-changes <code>on</code> in Word document</li>
-<li>Antipattern: revision auto-saving w/ new time-stamp (e.g., metadata or name)</li>
-<li>Remote repo: accessed &amp; updated<br> by anyone at anytime</li>
+<li>Antipattern: revision auto-saving w/ time-stamp</li>
+</ul>
+<p><img data-src="phd_cycle.jpeg" class="absolute" style="top: 225px; left: 50px; height: 375px; "></p>
+<p><img data-src="phd101212s.gif" class="absolute" style="top: 225px; right: 150px; height: 500px; "></p>
+
+<aside><div>
+<p><a href="https://twitter.com/PHDcomics/status/1299664600166789120?s=20&amp;t=--Q-z2LQy59FlTGd_8DbKw">via Twitter</a> <a href="https://phdcomics.com/comics/archive_print.php?comicid=1531">phdcomics.com</a></p>
+</div></aside></section>
+<section id="why-use-git-1" class="slide level2">
+<h2>Why use Git?</h2>
+<ul>
+<li>Remote repo: accessed &amp; <br> updated anytime</li>
 <li>Solutions for continuous <br> merging of sets of changes</li>
 </ul>
-<p><img data-src="team-git.png" class="absolute" style="top: 220px; right: 30px; height: 320px; "></p>
+<p><img data-src="team-git.png" class="absolute" style="top: 0px; right: -10px; height: 450px; "></p>
 
 <aside><div>
 <blockquote>
 <p>Perez-Riverol, <em>et al.</em> (2016). Ten Simple Rules for Taking Advantage of Git &amp; GitHub. <em>PLoS computational biology</em>, <a href="https://doi.org/10.1371/journal.pcbi.1004947">12(7), e1004947.</a></p>
 </blockquote>
 </div></aside></section>
-<section id="how-to-use-git" class="slide level2">
+<section id="how-to-use-git" class="slide level2 smaller">
 <h2>How to use Git</h2>
 <ul>
 <li>Three States
@@ -449,14 +459,21 @@
 <li><em>Committed</em> means data is safely stored in local database.</li>
 </ul></li>
 </ul>
+<p><img data-src="git-lifecycle.png" class="absolute" style="left: 200px; bottom: 0px; height: 300px; "></p>
+</section>
+<section id="how-to-use-git-1" class="slide level2">
+<h2>How to use Git</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:35%;">
+<p><em>Frequently used</em></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {git} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>git status</span>
 <span id="cb1-2"><a href="#cb1-2"></a>git add</span>
 <span id="cb1-3"><a href="#cb1-3"></a>git commit -a</span>
 <span id="cb1-4"><a href="#cb1-4"></a>git push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><a href="http://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">ProGit Book</a></p>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:20%;">
+
+</div><div class="column" style="width:35%;">
+<p><em>Used at key points</em></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource {git} number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>git config</span>
 <span id="cb2-2"><a href="#cb2-2"></a>git clone</span>
 <span id="cb2-3"><a href="#cb2-3"></a>git log</span>
@@ -465,19 +482,96 @@
 <span id="cb2-6"><a href="#cb2-6"></a>git diff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<p><img data-src="progit2.png" class="absolute" style="top: 0px; right: 0px; height: 200px; "></p>
+<p><a href="http://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">ProGit Book</a></p>
+<p><img data-src="progit2.png" class="absolute" style="left: 250px; bottom: 50px; height: 300px; "></p>
 </section>
 <section id="best-git-intro" class="slide level2" data-background-opacity="0.3" data-background-iframe="http://karthik.github.io/git_intro/#/slide-title" style="text-align: left; margin-top: 1em">
 <h2><a href="http://karthik.github.io/git_intro/#/slide-title" data-preview-link="true" style="text-align: center">Best Git INTRO</a></h2>
 </section>
+<section id="key-featureof-git-timeline-control" class="slide level2">
+<h2>Key Featureof Git: Timeline Control</h2>
+
+<img data-src="reachability-example.png" class="r-stretch"><aside class="notes">
+<p>You can think of this graph as a set of three parallel universes with time flowing from left to right, so that A is the beginning of recorded history. (The arrow represents the “follows” or “is subsequent to” relationship, so you might say that “B follows A”.)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="key-featureof-git-timeline-control-1" class="slide level2">
+<h2>Key Featureof Git: Timeline Control</h2>
+
+<img data-src="reachability-exampleE.jpg" class="r-stretch"></section>
+<section id="key-featureof-git-timeline-control-2" class="slide level2">
+<h2>Key Featureof Git: Timeline Control</h2>
+
+<img data-src="reachability-exampleK.jpg" class="r-stretch"><aside class="notes">
+<ul>
+<li>If you start from E, the history you’ll see is A, B, C, D, E.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="key-featureof-git-timeline-control-3" class="slide level2">
+<h2>Key Featureof Git: Timeline Control</h2>
+
+<img data-src="reachability-exampleH.jpg" class="r-stretch"><aside class="notes">
+<ul>
+<li>If you start from K, the history you’ll see is A, B, C, I, J, K. But the really important thing about this is that no matter which node you start with, some <strong>parts of the graph will be unreachable</strong> to you.</li>
+</ul>
+<p><em>turn it around</em>: <strong>Depending</strong> on where you start, you can <strong>reach parts</strong> of the graph that you couldn’t get to otherwise.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="key-featureof-git-timeline-control-4" class="slide level2">
+<h2>Key Featureof Git: Timeline Control</h2>
+
+<img data-src="graph.png" class="r-stretch"></section>
 <section id="learn-git" class="slide level2">
 <h2>Learn Git</h2>
-<p>https://ndpsoftware.com/git-cheatsheet.html https://git-scm.com/docs http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository</p>
+<ul>
+<li><a href="https://git-scm.com/docs">git-scm.com/docs</a></li>
+<li><a href="http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository</a></li>
+<li><a href="https://ndpsoftware.com/git-cheatsheet.html">ndpsoftware.com/git-cheatsheet.html</a></li>
+</ul>
 </section>
 <section id="practice-git" class="slide level2">
 <h2>Practice Git!!</h2>
-<p>https://learngitbranching.js.org https://app.datacamp.com/learn/courses/introduction-to-git https://www.w3schools.com/git/git_exercises.asp</p>
-</section>
+<ul>
+<li><a href="https://git-school.github.io/visualizing-git/">https://git-school.github.io/visualizing-git/</a></li>
+<li><a href="https://learngitbranching.js.org">learngitbranching.js.org</a></li>
+<li><a href="https://app.datacamp.com/learn/courses/introduction-to-git">app.datacamp.com/learn/courses/introduction-to-git</a></li>
+<li><a href="https://www.w3schools.com/git/git_exercises.asp">www.w3schools.com/git/git_exercises.asp</a></li>
+</ul>
+
+<aside><div>
+<p><a href="https://youtu.be/1ffBJ4sVUb4"></a></p>
+</div></aside></section>
 <section id="repositories" class="slide level2">
 <h2>Repositories</h2>
 <p>You typically obtain a Git repository in one of two ways:<br>
@@ -583,10 +677,10 @@
 <section id="teams-and-code-review" class="slide level2 smaller">
 <h2>Teams and Code Review</h2>
 <ul>
-<li>teams for sub-components of larger projects</li>
-<li>teams for super-group for several repos</li>
-<li>groups in classrooms</li>
-<li>packages to arrange <br> members &amp; organization</li>
+<li>Teams for sub-components of larger projects</li>
+<li>Teams for super-group for several repos</li>
+<li>Groups in classrooms</li>
+<li>Packages to arrange <br> members &amp; organization</li>
 </ul>
 <p><img data-src="team-discussion.png" class="absolute" style="bottom: 130px; right: 0px; height: 350px; "></p>
 
@@ -608,10 +702,10 @@
 <section id="webpages-and-wikis" class="title-slide slide level1 center">
 <h1>Webpages and Wikis</h1>
 <ul>
-<li>built-in GitHub wikis</li>
-<li>hosting slides</li>
-<li>hosting webpages</li>
-<li>verson control with additional hosting</li>
+<li>Built-in GitHub wikis</li>
+<li>Hosting webpages</li>
+<li>Hosting slides</li>
+<li>Verson control to other high bandwidth servers</li>
 </ul>
 </section>
 <section id="ropensci" class="slide level2">

@@ -40,39 +40,71 @@ https://en.wikipedia.org/wiki/Linus_Torvalds
 http://git-scm.com/book/en/v2/
 ::: 
 
-
 ## Why use Git?
 
 - Analogy: turn tracking-changes `on` in Word document
-- Antipattern: revision auto-saving  w/ new time-stamp (e.g., metadata or name)
-- Remote repo: accessed & updated<br> by anyone at anytime
+- Antipattern: revision auto-saving w/ time-stamp  
+
+
+![](phd_cycle.jpeg){.absolute top=225 left=50  height="375"} 
+
+![](phd101212s.gif){.absolute top=225 right=150  height="500"} 
+
+::: aside
+[via Twitter](https://twitter.com/PHDcomics/status/1299664600166789120?s=20&t=--Q-z2LQy59FlTGd_8DbKw)
+[phdcomics.com](https://phdcomics.com/comics/archive_print.php?comicid=1531)
+:::
+
+
+## Why use Git?
+
+- Remote repo: accessed & <br> updated anytime
 - Solutions for continuous <br> merging of sets of changes
 
-![](team-git.png){.absolute top=220 right=30  height="320"} 
+![](team-git.png){.absolute top=0 right=-10  height="450"} 
 
 ::: aside
 > Perez-Riverol, *et al.* (2016). Ten Simple Rules for Taking Advantage of Git & GitHub. *PLoS computational biology*, [12(7), e1004947.](https://doi.org/10.1371/journal.pcbi.1004947)
 ::: 
 
 
-## How to use Git
+
+## How to use Git {.smaller}
 
 - Three States
    - *Modified* means that you have changed the file <br> but have not committed it to your database yet.
    - *Staged* means that you have marked a modified file <br> to go into your next commit snapshot.
    - *Committed* means data is safely stored in local database.
+   
+![](git-lifecycle.png){.absolute bottom=0 left=200  height="300"} 
+
+
+## How to use Git
 
 ::: columns
-::: {.column width="50%"}
+
+
+
+::: {.column width="35%"}
+
+*Frequently used*  
 ```{git}
 git status
 git add
 git commit -a
 git push
 ```
-[ProGit Book](http://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
+
 :::
-::: {.column width="50%"}
+
+::: {.column width="20%"}
+
+:::
+
+
+::: {.column width="35%"}
+*Used at key points*  
+
 ```{git}
 git config
 git clone
@@ -81,31 +113,80 @@ git pull
 git branch
 git diff
 ```
+
 :::
 :::
 
-![](progit2.png){.absolute top=0 right=0  height="200"} 
+[ProGit Book](http://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
+
+![](progit2.png){.absolute bottom=50 left=250  height="300"} 
 
 
 ::: {background-opacity="0.3"  background-iframe="http://karthik.github.io/git_intro/#/slide-title" style="text-align: left; margin-top: 1em"}
 ## [Best Git INTRO](http://karthik.github.io/git_intro/#/slide-title){preview-link="true" style="text-align: center"}
 :::
 
+## Key Featureof Git: Timeline Control 
+
+![](reachability-example.png)
+
+::: {.notes}
+
+You can think of this graph as a set of three parallel universes with time flowing from left to right, so that A is the beginning of recorded history. (The arrow represents the "follows" or "is subsequent to" relationship, so you might say that "B follows A".)
+
+:::
+
+## Key Featureof Git: Timeline Control 
+
+![](reachability-exampleE.jpg)
+
+
+## Key Featureof Git: Timeline Control 
+
+![](reachability-exampleK.jpg)
+
+::: {.notes}
+
+- If you start from E, the history you'll see is A, B, C, D, E.
+
+:::
+
+## Key Featureof Git: Timeline Control 
+
+![](reachability-exampleH.jpg)
+
+
+::: {.notes}
+- If you start from K, the history you'll see is A, B, C, I, J, K.
+But the really important thing about this is that no matter which node you start with, some **parts of the graph will be unreachable** to you.  
+
+*turn it around*: **Depending** on where you start, you can **reach parts** of the graph that you couldn't get to otherwise.  
+
+:::
+
+
+## Key Featureof Git: Timeline Control 
+
+![](graph.png)
+
 
 ## Learn Git
 
-https://ndpsoftware.com/git-cheatsheet.html
-https://git-scm.com/docs
-http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+- [git-scm.com/docs](https://git-scm.com/docs)
+- [git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository](http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+- [ndpsoftware.com/git-cheatsheet.html](https://ndpsoftware.com/git-cheatsheet.html)
 
 
 ## Practice Git!!
 
-https://learngitbranching.js.org
-https://app.datacamp.com/learn/courses/introduction-to-git
-https://www.w3schools.com/git/git_exercises.asp
+- [https://git-school.github.io/visualizing-git/](https://git-school.github.io/visualizing-git/)
+- [learngitbranching.js.org](https://learngitbranching.js.org)
+- [app.datacamp.com/learn/courses/introduction-to-git](https://app.datacamp.com/learn/courses/introduction-to-git)
+- [www.w3schools.com/git/git_exercises.asp](https://www.w3schools.com/git/git_exercises.asp)
 
-
+::: aside
+[](https://youtu.be/1ffBJ4sVUb4)
+:::
 
 ## Repositories
 
@@ -197,10 +278,10 @@ https://github.com/ypriverol/github-paper/network
 
 ## Teams and Code Review {.smaller}
 
-- teams for sub-components of larger projects
-- teams for super-group for several repos
-- groups in classrooms
-- packages to arrange <br> members & organization
+- Teams for sub-components of larger projects
+- Teams for super-group for several repos
+- Groups in classrooms
+- Packages to arrange <br> members & organization
 
 ![](team-discussion.png){.absolute bottom=130 right=0  height="350"} 
 
@@ -219,10 +300,10 @@ https://github.com/ypriverol/github-paper/network
 
 # Webpages and Wikis
 
-- built-in GitHub wikis
-- hosting slides
-- hosting webpages
-- verson control with additional hosting
+- Built-in GitHub wikis
+- Hosting webpages
+- Hosting slides
+- Verson control to other high bandwidth servers 
 
 ## ROpenSci
 
