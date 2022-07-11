@@ -126,9 +126,11 @@ git diff
 ## [Best Git INTRO](http://karthik.github.io/git_intro/#/slide-title){preview-link="true" style="text-align: center"}
 :::
 
-## Key Featureof Git: Timeline Control 
+## Key Feature of Git: Timeline Control 
 
 ![](reachability-example.png)
+
+[Example from *Think Like (a) Git: A Guide for the Perplexed*](https://think-like-a-git.net/sections/graph-theory/reachability.html)
 
 ::: {.notes}
 
@@ -136,12 +138,12 @@ You can think of this graph as a set of three parallel universes with time flowi
 
 :::
 
-## Key Featureof Git: Timeline Control 
+## Key Feature of Git: Timeline Control 
 
 ![](reachability-exampleE.jpg)
 
 
-## Key Featureof Git: Timeline Control 
+## Key Feature of Git: Timeline Control 
 
 ![](reachability-exampleK.jpg)
 
@@ -151,7 +153,7 @@ You can think of this graph as a set of three parallel universes with time flowi
 
 :::
 
-## Key Featureof Git: Timeline Control 
+## Key Feature of Git: Timeline Control 
 
 ![](reachability-exampleH.jpg)
 
@@ -165,9 +167,12 @@ But the really important thing about this is that no matter which node you start
 :::
 
 
-## Key Featureof Git: Timeline Control 
+## Key Feature of Git: Timeline Control 
 
 ![](graph.png)
+
+## {background-image="Git-4yrs-up.png" background-size="cover"}
+
 
 
 ## Learn Git
@@ -249,7 +254,7 @@ Use GitHub Repository Discussions to:
 
 ::: aside
    - [
-https://github.com/csea-lab/github-collaboration-slides/discussions](
+Repo discussions](
 https://github.com/csea-lab/github-collaboration-slides/discussions)
 ::: 
 
@@ -276,6 +281,8 @@ https://github.com/ypriverol/github-paper/blob/master/document/manuscript.md
 
 https://github.com/ypriverol/github-paper/network
 
+# GitHub Organizations, Projects, & Beyond
+
 ## Teams and Code Review {.smaller}
 
 - Teams for sub-components of larger projects
@@ -295,8 +302,10 @@ https://github.com/ypriverol/github-paper/network
 
 ## Version Control for Open Science
 
-- MNE
-- FieldTrip
+- [MNE](https://github.com/mne-tools/mne-python)
+- [FieldTrip](https://github.com/fieldtrip/fieldtrip)
+
+https://github.com/fieldtrip/fieldtrip/releases/tag/20220617
 
 # Webpages and Wikis
 
@@ -316,6 +325,12 @@ https://devguide.ropensci.org/newstemplate.html
 
 
 # CodeSpaces
+
+- Integrated with VS Code
+- Run code from a Repo in a Containerized environment
+
+
+
 
 ---
 
