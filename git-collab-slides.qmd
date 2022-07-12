@@ -248,9 +248,9 @@ This is where the organization of development begins
 
 
 ::: aside
-https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart
-https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue
-https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-a-branch-for-an-issue
+[Github: tracking-your-work-with-issues/quickstart](https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart)
+[Github: creating-an-issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)
+[Github: creating-a-branch-for-an-issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-a-branch-for-an-issue)
 :::
 
 ::: {.notes}
@@ -303,13 +303,8 @@ Use GitHub Repository Discussions to:
 ![](repo-discussion.png){.absolute top=180 right=50  height="350"} 
 
 ::: aside
-   - [
-Repo discussions](
-https://github.com/csea-lab/github-collaboration-slides/discussions)
+   - [Repo discussions](https://github.com/csea-lab/github-collaboration-slides/discussions)
 ::: 
-
-## Discussions 
-
 
 
 ## Repos
@@ -328,11 +323,11 @@ https://github.com/csea-lab/github-collaboration-slides/discussions)
 
 ## Writing Manuscripts
 
-https://github.com/ypriverol/github-paper/blob/master/document/manuscript.md
+[Manuscript written on GitHub](https://github.com/ypriverol/github-paper/blob/master/document/manuscript.md)
 
 ## Flow Diagrams
 
-https://github.com/ypriverol/github-paper/network
+[Manuscript written on GitHub: history flow diagram](https://github.com/ypriverol/github-paper/network)
 
 # GitHub Organizations, Projects, & Beyond
 
@@ -341,9 +336,9 @@ https://github.com/ypriverol/github-paper/network
 - Teams for sub-components of larger projects
 - Teams for super-group for several repos
 - Groups in classrooms: template projects and assignments 
-- Packages to arrange <br> members, groups, communication, & organization
+- Packages to arrange <br> members, groups, <br> communication,<br>  & organization
 
-![](team-discussion.png){.absolute bottom=130 right=0  height="350"} 
+![](team-discussion.png){.absolute bottom=110 right=0  height="330"} 
 
 ::: aside
 
@@ -358,12 +353,17 @@ https://github.com/ypriverol/github-paper/network
 - [MNE](https://github.com/mne-tools/mne-python)
 - [FieldTrip](https://github.com/fieldtrip/fieldtrip)
 
-https://github.com/fieldtrip/fieldtrip/releases/tag/20220617
+- [Fieldtrip: releases](https://github.com/fieldtrip/fieldtrip/releases/tag/20220617)
 
 ## Projects
 
-https://github.com/fieldtrip/fieldtrip/projects?type=classic
-https://github.com/fieldtrip/fieldtrip/projects/3
+- [Fieldtrip: project boards](https://github.com/fieldtrip/fieldtrip/projects?type=classic)
+- [Fieldtrip: completed project](https://github.com/fieldtrip/fieldtrip/projects/3)
+- [Fieldtrip: ongoing project - source modeling](https://github.com/fieldtrip/fieldtrip/projects/2)
+- [Fieldtrip: ongoing project - performance enhancement](https://github.com/fieldtrip/fieldtrip/projects/5)
+
+- [MNE Sprint June 2022](https://github.com/orgs/mne-tools/projects/2/views/1)
+
 
 # Webpages and Wikis
 
@@ -374,23 +374,23 @@ https://github.com/fieldtrip/fieldtrip/projects/3
 
 ## ROpenSci
 
-https://ropensci.org
-https://devguide.ropensci.org
-https://ropensci.org/software-review/
-https://ropensci.r-universe.dev/ui#packages
-https://devguide.ropensci.org/collaboration.html
-https://devguide.ropensci.org/newstemplate.html
+- [ROpenSci](https://ropensci.org)
+- [ROpenSci: Developer Guide](https://devguide.ropensci.org)
+- [ROpenSci: Code Review Process](https://ropensci.org/software-review/)
+- [ROpenSci: R-Universe](https://ropensci.r-universe.dev/ui#packages)
+- [ROpenSci: Collaborating](https://devguide.ropensci.org/collaboration.html)
+- [ROpenSci: news template](https://devguide.ropensci.org/newstemplate.html)
 
 # Developer Events
 
 ## Code Sprints
 
-https://mne.tools/sprint2019/
-https://github.com/fieldtrip/fieldtrip/projects?type=classic
-https://github.com/fieldtrip/fieldtrip/projects/3
-https://en.wikipedia.org/wiki/Hackathon
-https://github.com/topics/hackathons?o=desc&s=updated
-https://www.amazon.com/Hackathon-Survival-Guide-stand-crowd/dp/1739627822
+- [MNE Code Sprint 2019](https://mne.tools/sprint2019/)
+- [Fieldtrip: project boards Sprints](https://github.com/fieldtrip/fieldtrip/projects?type=classic)
+
+- [Wikipedia: Hackathons entry](https://en.wikipedia.org/wiki/Hackathon)
+- [GitHub: Hackathons Guide](https://github.com/topics/hackathons?o=desc&s=updated)
+- [Book: Hackathon Survival Guide](https://www.amazon.com/Hackathon-Survival-Guide-stand-crowd/dp/1739627822)
 
 
 # CodeSpaces
@@ -405,25 +405,25 @@ https://www.amazon.com/Hackathon-Survival-Guide-stand-crowd/dp/1739627822
 
 ## Resources 
 
-https://kbroman.org/tutorials.html
+- [Karl Broman: Tutorials](https://kbroman.org/tutorials.html)
+- [Karl Broman: GitHub Tutorial](https://kbroman.org/github_tutorial/)
+- [Karl Broman: Git Merge Conflict Tutorial](https://kbroman.org/github_tutorial/pages/merge_conflicts.html)
+- [Karl Broman: Exploring Code Tutorial](https://kbroman.org/github_tutorial/pages/exploring_code.html)
+- [Karl Broman: Git Branching Tutorial](https://kbroman.org/github_tutorial/pages/branching.html)
+- [Karl Broman: List of Git commands](https://github.com/kbroman/Tools4RR/blob/main/04_Git/GitCommands/git_notes.md)
 
-https://kbroman.org/github_tutorial/
-https://kbroman.org/github_tutorial/pages/merge_conflicts.html
-https://kbroman.org/github_tutorial/pages/exploring_code.html
-https://kbroman.org/github_tutorial/pages/branching.html
-https://github.com/kbroman/Tools4RR/blob/main/04_Git/GitCommands/git_notes.md
+- [Bryan Happy Git With R](https://happygitwithr.com/index.html)
 
-https://happygitwithr.com/index.html
+- [Data Carpentry tutorial: git-in-github](https://datacarpentry.org/rr-version-control/02-git-in-github/index.html)
+- [Software Carpentry tutorial: Git Novice](https://swcarpentry.github.io/git-novice/)
+- [Library Carpentry tutorial: Git](https://librarycarpentry.org/lc-git/_)
 
-https://datacarpentry.org/rr-version-control/02-git-in-github/index.html
-https://swcarpentry.github.io/git-novice/
-https://librarycarpentry.org/lc-git/
+- [rogerdudler.github.io/git-guide](https://rogerdudler.github.io/git-guide/)
+- [git_cheat_sheet](https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
 
-https://rogerdudler.github.io/git-guide/
-https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf
-https://think-like-a-git.net
+- [Think Like a Git](https://think-like-a-git.net)
 
-https://training.github.com/downloads/github-git-cheat-sheet/
+- [github-git-cheat-sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
 
 
 
